@@ -1,0 +1,9 @@
+access_key = "you are access_key"
+secret_key = "you are secret_key"
+region = "ap-northeast-1" // tokyo
+
+availability_zone = {
+    a = "ap-northeast-1a"
+    c = "ap-northeast-1c"
+    d = "ap-northeast-1d"
+}

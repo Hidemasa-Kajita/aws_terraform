@@ -1,0 +1,10 @@
+# ssh key
+.ssh/key.pem
+.ssh/key.pub
+
+# terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
