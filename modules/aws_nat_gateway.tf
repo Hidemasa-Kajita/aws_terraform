@@ -1,5 +1,5 @@
 resource "aws_nat_gateway" "nat" {
-  for_each = aws_subnet.webPublicSubnet
+  for_each = aws_subnet.publicSubnet
   subnet_id     = each.value.id
   allocation_id = aws_eip.eip[each.key].id
 

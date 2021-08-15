@@ -1,5 +1,5 @@
-resource "aws_subnet" "webPublicSubnet" {
-  for_each          = var.web_subnets
+resource "aws_subnet" "publicSubnet" {
+  for_each          = var.public_subnets
   vpc_id            = aws_vpc.myVpc.id
   cidr_block        = each.value.cidr_block
   availability_zone = each.value.availability_zone
@@ -10,8 +10,8 @@ resource "aws_subnet" "webPublicSubnet" {
   }
 }
 
-resource "aws_subnet" "dbPrivateSubnet" {
-  for_each          = var.db_subnets
+resource "aws_subnet" "privateSubnet" {
+  for_each          = var.private_subnets
   vpc_id            = aws_vpc.myVpc.id
   cidr_block        = each.value.cidr_block
   availability_zone = each.value.availability_zone

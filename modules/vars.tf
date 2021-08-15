@@ -1,7 +1,7 @@
 variable "env" {}
 variable "availability_zone" {}
-variable "web_subnets" {}
-variable "db_subnets" {}
+variable "public_subnets" {}
+variable "private_subnets" {}
 variable "created_by" {}
 variable "db_name" {}
 variable "db_username" {}

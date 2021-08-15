@@ -3,8 +3,8 @@ variable "secret_key" {}
 variable "region" {}
 variable "availability_zone" {}
 variable "env" {}
-variable "web_subnets" {}
-variable "db_subnets" {}
+variable "public_subnets" {}
+variable "private_subnets" {}
 variable "created_by" {}
 variable "db_name" {}
 variable "db_username" {}
@@ -20,8 +20,8 @@ module "app_dev" {
   source            = "./modules"
   env               = var.env
   availability_zone = var.availability_zone // vpcのavailability_zone
-  web_subnets       = var.web_subnets
-  db_subnets        = var.db_subnets
+  public_subnets    = var.public_subnets
+  private_subnets   = var.private_subnets
   created_by        = var.created_by
   db_name           = var.db_name
   db_username       = var.db_username

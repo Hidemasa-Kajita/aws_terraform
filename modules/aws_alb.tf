@@ -2,7 +2,7 @@ resource "aws_alb" "alb" {
   name                       = "alb"
   security_groups            = ["${aws_security_group.albSg.id}"]
   subnets                    = [
-      for v in aws_subnet.webPublicSubnet : v.id
+      for v in aws_subnet.publicSubnet : v.id
   ]
   internal                   = false
   enable_deletion_protection = false

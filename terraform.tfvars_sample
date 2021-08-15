@@ -14,7 +14,7 @@ availability_zone = {
 }
 
 # web(ec2)用のサブネット
-web_subnets = {
+public_subnets = {
   a1 : {
     cidr_block        = "10.0.101.0/24"
     availability_zone = "ap-northeast-1a"

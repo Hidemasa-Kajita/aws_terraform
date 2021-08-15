@@ -3,7 +3,7 @@ data "aws_ssm_parameter" "amzn2_ami" {
 }
 
 resource "aws_instance" "webInstance" {
-  for_each      = aws_subnet.webPublicSubnet
+  for_each      = aws_subnet.publicSubnet
   ami           = data.aws_ssm_parameter.amzn2_ami.value
   instance_type = "t2.micro"
   key_name      = aws_key_pair.sshKey.key_name
