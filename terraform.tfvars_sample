@@ -6,6 +6,7 @@ created_by  = "terraform" # リソースの作成者
 db_name     = "my_db" # dbの名前
 db_username = "testuser" # dbログインのユーザー名
 db_password = "password" # dbログインのパスワード
+domain = "you are domain"
 
 availability_zone = {
   a = "ap-northeast-1a"
