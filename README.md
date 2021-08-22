@@ -1,10 +1,10 @@
 # AWS インフラ構築
 ## ブランチ別の構成
 ### [master branch](https://github.com/Hidemasa-Kajita/aws_terraform/tree/master)
-[AWS single.pdf](https://github.com/Hidemasa-Kajita/aws_terraform/files/7026714/AWS.single.pdf)
+![AWS single](https://user-images.githubusercontent.com/54725215/130346605-ca547e9d-4473-48db-8ba9-9728a880fbdc.jpeg)
 
 ### [develop branch](https://github.com/Hidemasa-Kajita/aws_terraform/tree/develop)
-[AWS double.pdf](https://github.com/Hidemasa-Kajita/aws_terraform/files/7026738/AWS.double.pdf)
+![AWS double](https://user-images.githubusercontent.com/54725215/130346578-6c46d298-e234-4106-83cb-ec77de028e8d.jpeg)
 
 ## setup
 1. AWSマネジメントコンソールからIAMユーザーを作成
