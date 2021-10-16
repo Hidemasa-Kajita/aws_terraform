@@ -1,0 +1,44 @@
+access_key  = "you are access_key"
+secret_key  = "you are secret_key"
+region      = "ap-northeast-1"
+env         = "dev" # 環境
+created_by  = "terraform" # リソースの作成者
+db_name     = "my_db" # dbの名前
+db_username = "testuser" # dbログインのユーザー名
+db_password = "password" # dbログインのパスワード
+
+availability_zone = {
+  a = "ap-northeast-1a"
+  c = "ap-northeast-1c"
+  d = "ap-northeast-1d"
+}
+
+public_subnets = {
+  0 : {
+    cidr_block        = "10.0.101.0/24"
+    availability_zone = "ap-northeast-1a"
+  },
+  1 : {
+    cidr_block        = "10.0.102.0/24"
+    availability_zone = "ap-northeast-1c"
+  },
+  2 : {
+    cidr_block        = "10.0.103.0/24"
+    availability_zone = "ap-northeast-1d"
+  }
+}
+
+private_subnets = {
+  0 : {
+    cidr_block        = "10.0.1.0/24"
+    availability_zone = "ap-northeast-1a"
+  },
+  1 : {
+    cidr_block        = "10.0.2.0/24"
+    availability_zone = "ap-northeast-1c"
+  },
+  2 : {
+    cidr_block        = "10.0.3.0/24"
+    availability_zone = "ap-northeast-1d"
+  }
+}
